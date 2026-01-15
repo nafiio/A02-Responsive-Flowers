@@ -15,3 +15,56 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* shared style */
+.display-none{
+  display: none;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* Navbar style */
+.navbar{
+  border: 1px solid slateblue;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex: 1;
+}
+.nav-container{
+  border: 1px solid salmon;
+  display: flex;
+  
+}
+.nav-links{
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  
+  
+}
+.nav-item{
+  margin-right: 50px;
+  list-style: none; 
+}
+.nav-link{
+  text-decoration:none;
+}
+.home{
+  color: black;
+  font-weight: 700;
+}
+.shop{
+  color: #8987a1;
+}
+
+
+/* Responsive Medeia queri */
+@media screen and (max-width:576px) {
+  .nav-links{
+    display: none;
+  }
+}
