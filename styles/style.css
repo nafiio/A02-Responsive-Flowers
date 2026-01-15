@@ -16,55 +16,92 @@
   font-style: normal;
 }
 
-
+* {
+  margin: 0px;
+  padding: 0px;
+}
 /* shared style */
-.display-none{
+.display-none {
   display: none;
 }
 
-.container{
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
 /* Navbar style */
-.navbar{
+.navbar {
   border: 1px solid slateblue;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex: 1;
 }
-.nav-container{
+.nav-container {
   border: 1px solid salmon;
   display: flex;
-  
 }
-.nav-links{
+.nav-links {
   border: 1px solid teal;
   display: flex;
   align-items: center;
-  
-  
 }
-.nav-item{
+.nav-item {
   margin-right: 50px;
-  list-style: none; 
+  list-style: none;
 }
-.nav-link{
-  text-decoration:none;
+.nav-link {
+  text-decoration: none;
 }
-.home{
+.home {
   color: black;
   font-weight: 700;
 }
-.shop{
+.shop {
   color: #8987a1;
 }
 
+/* Hero section */
+.banner-container {
+  display: flex;
+  height: 400px;
+  margin-top: 120px;
+  border: 1px solid aqua;
+}
+.banner-div {
+  max-width: 570px;
+  margin-top: 50px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.orange-title {
+  color: #e95a08;
+}
+
+.banner-subtitle {
+  color: #00000080;
+  font-size: 1.25rem;
+  margin-top: 13px;
+}
+.banner-image img {
+  width: 100%;
+}
 
 /* Responsive Medeia queri */
-@media screen and (max-width:576px) {
-  .nav-links{
+@media screen and (max-width: 576px) {
+  .nav-links {
     display: none;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .banner-subtitle {
+    font-size: 1rem;
   }
 }
