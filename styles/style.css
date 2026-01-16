@@ -17,8 +17,12 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  /* margin: 0px;
+  padding: 0px; */
+}
+img{
+  width: 100%;
+  display: block;
 }
 /* shared style */
 .display-none {
@@ -28,6 +32,22 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.btn{
+  width: 268px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 /* Navbar style */
 .navbar {
@@ -64,17 +84,19 @@
 /* Hero section */
 .banner-container {
   display: flex;
-  height: 400px;
+  height: auto;
   margin-top: 120px;
   border: 1px solid aqua;
 }
 .banner-div {
   max-width: 570px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .banner-title {
   font-weight: 700;
   font-size: 3.5rem;
+  margin: 0px;
+  margin-top: 50px;
 }
 .orange-title {
   color: #e95a08;
@@ -83,14 +105,75 @@
 .banner-subtitle {
   color: #00000080;
   font-size: 1.25rem;
-  margin-top: 13px;
+ margin: 0px;
 }
 .banner-image img {
   width: 100%;
 }
 
+/* Card section related style */
+.card-section {
+  border: 1px solid red;
+}
+.card-title-container {
+  text-align: center;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.our{
+  color: #E95A08;
+}
+.card-subtitle {
+  max-width: 885px;
+  margin: 0 auto;
+  color:#00000080;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 70px;
+  margin-bottom: 100px;
+}
+.flower-card{
+  border: 1px solid blue;
+  max-width: 270px;
+  max-height: 485px;
+}
+.flower-name{
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.flower-price{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 /* Responsive Medeia queri */
 @media screen and (max-width: 576px) {
+
+  .btn{
+  width: 165px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
   .nav-links {
     display: none;
   }
@@ -104,4 +187,31 @@
   .banner-subtitle {
     font-size: 1rem;
   }
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+  }
+  .card-subtitle {
+    margin-top: 28px;
+  }
+  .flower-card{
+  border: 1px solid blue;
+  width: 165px;
+  /* height: 200px; */
+}
+.flower-card img{
+  width: 100%;
+}
+
+.flower-name{
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+.flower-price{
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
 }
