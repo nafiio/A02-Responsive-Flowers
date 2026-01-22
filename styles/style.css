@@ -17,13 +17,14 @@
 }
 
 * {
-  /* margin: 0px;
-  padding: 0px; */
+  margin: 0px;
+  padding: 0px;
 }
-img{
+
+/* img{
   width: 100%;
   display: block;
-}
+} */
 /* shared style */
 .display-none {
   display: none;
@@ -34,20 +35,19 @@ img{
   margin: 0 auto;
 }
 
-.btn{
+
+.btn {
   width: 268px;
   height: 50px;
   font-weight: 600;
   font-size: 1rem;
-  background-color: #E95A08;
+  background-color: #e95a08;
   color: white;
   border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
-  
 }
 /* Navbar style */
 .navbar {
@@ -105,7 +105,7 @@ img{
 .banner-subtitle {
   color: #00000080;
   font-size: 1.25rem;
- margin: 0px;
+  margin: 0px;
 }
 .banner-image img {
   width: 100%;
@@ -122,58 +122,87 @@ img{
   font-weight: 700;
   font-size: 3rem;
 }
-.our{
-  color: #E95A08;
+.our {
+  color: #e95a08;
 }
 .card-subtitle {
   max-width: 885px;
   margin: 0 auto;
-  color:#00000080;
+  font-size: 1.25rem;
+  color: #00000080;
 }
 
-.card-container{
+.card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 70px;
   margin-bottom: 100px;
 }
-.flower-card{
+.flower-card {
   border: 1px solid blue;
   max-width: 270px;
   max-height: 485px;
 }
-.flower-name{
+.flower-name {
   font-weight: 500;
   font-size: 1.5rem;
   text-align: center;
 }
-.flower-price{
+.flower-price {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 20px;
 }
+/* Flower plants  */
 
+.flower-container{
+  
+  display: flex;
+  margin-top: 150px;
+  gap: 60px;
+}
+.flower-description{
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flower-heading{
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0px;
+  
+}
+
+.ulpragraph {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #00000080;
+}
+.list-item{
+  list-style: disc;
+  padding-left: 45px;
+  
+}
 
 /* Responsive Medeia queri */
 @media screen and (max-width: 576px) {
-
-  .btn{
-  width: 165px;
-  height: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  background-color: #E95A08;
-  color: white;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  
-  
-}
+  .btn {
+    width: 165px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #e95a08;
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .nav-links {
     display: none;
   }
@@ -187,31 +216,52 @@ img{
   .banner-subtitle {
     font-size: 1rem;
   }
-  .card-container{
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 25px;
   }
   .card-subtitle {
     margin-top: 28px;
   }
-  .flower-card{
-  border: 1px solid blue;
-  width: 165px;
-  /* height: 200px; */
-}
-.flower-card img{
-  width: 100%;
-}
+  .flower-card {
+    border: 1px solid blue;
+    width: 165px;
+    /* height: 200px; */
+  }
+  .flower-card img {
+    width: 100%;
+  }
 
-.flower-name{
-  font-weight: 500;
-  font-size: 1rem;
-  text-align: center;
-}
-.flower-price{
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 20px;
-}
+  .flower-name {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .flower-price {
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* flower plants */
+  .flower-description{
+    width: 100%;
+  }
+  .flower-container{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .flower-heading br{
+    display: none;
+  }
+  .flower-heading{
+    margin-top: 18px;
+    font-size: 1.5rem;
+
+  }
+  .ulpragraph {
+    font-size: 14px;
+    margin-top: 16px;
+  }
 }
