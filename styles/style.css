@@ -35,7 +35,6 @@
   margin: 0 auto;
 }
 
-
 .btn {
   width: 268px;
   height: 50px;
@@ -157,24 +156,24 @@
 }
 /* Flower plants  */
 
-.flower-container{
-  
+.flower-container {
   display: flex;
   margin-top: 150px;
   gap: 60px;
+  /* position: relative; */
 }
-.flower-description{
+
+.flower-description {
   width: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.flower-heading{
+.flower-heading {
   font-weight: 700;
   font-size: 3rem;
   margin: 0px;
-  
 }
 
 .ulpragraph {
@@ -182,10 +181,21 @@
   margin-top: 20px;
   color: #00000080;
 }
-.list-item{
+.list-item {
   list-style: disc;
   padding-left: 45px;
-  
+}
+.badge {
+  border: 1px solid tomato;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -110px;
+  right: -120px;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+.image-container {
+  position: relative;
 }
 
 /* Responsive Medeia queri */
@@ -245,23 +255,25 @@
   }
 
   /* flower plants */
-  .flower-description{
+  .flower-description {
     width: 100%;
   }
-  .flower-container{
+  .flower-container {
     flex-direction: column;
     gap: 0px;
   }
-  .flower-heading br{
+  .flower-heading br {
     display: none;
   }
-  .flower-heading{
+  .flower-heading {
     margin-top: 18px;
     font-size: 1.5rem;
-
   }
   .ulpragraph {
     font-size: 14px;
     margin-top: 16px;
+  }
+  .badge{
+    display: none;
   }
 }
